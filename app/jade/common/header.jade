@@ -1,0 +1,17 @@
+﻿header.header
+		.container
+			.header__logo
+				.header__logo-bigtext rees46
+				.header__logo-text DASHBOARD
+			.header__settings
+				img(src='../img/lo.png').header__settings-cogwheel
+				ul.header__settings-panel
+					each items in ["Админка", "Выйти"]
+						li.settings-panel__item
+							a.settings-panel__link(href="#")= items
+
+
+
+
+
+

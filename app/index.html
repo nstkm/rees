@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REES</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- build:css css/vendor.min.css-->
+    <!-- bower:css-->
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css css/style.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+    <!-- build:js js/modernizr.min.js-->
+    <script src="bower/modernizr/modernizr.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo">
+            <div class="header__logo-bigtext">rees46</div>
+            <div class="header__logo-text">DASHBOARD</div>
+          </div>
+          <div class="header__settings"><img src="../img/lo.png" class="header__settings-cogwheel">
+            <ul class="header__settings-panel">
+              <li class="settings-panel__item"><a href="#" class="settings-panel__link">Админка</a></li>
+              <li class="settings-panel__item"><a href="#" class="settings-panel__link">Выйти</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="graphics">
+          <div class="graphics__display">
+            <div class="container">
+              <div class="graphics__display-sales">
+                <div class="display-sales__title">ОТНОШЕНИЯ ОБЪЁМОВ ПРОДАЖ</div>
+                <div class="display-sales__cicles"></div>
+                <p class="display-sales__text">На графиках отображаются прирост продаж за счёт внедрения модуля Rees46</p>
+              </div>
+              <div class="graphics__display-efficiency">
+                <div class="display-efficiency__title">ТЕКУЩАЯ ЭФФЕКТИВНОСТЬ</div>
+                <select class="select display-efficiency__select">
+                  <option class="select-choose"> ЗА 1 НЕДЕЛЮ </option>
+                  <option class="select-choose"> ЗА 2 НЕДЕЛИ </option>
+                  <option class="select-choose"> ВСЯ ИСТОРИЯ</option>
+                </select>
+                <div class="display-efficiency__chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="graphics__marking">
+            <ul class="graphics__marking-list"><a class="graphics__marking-square graphics__marking-square--grey"></a>
+              <li class="graphics__marking-item"><a href="#" class="graphics__marking-link">обычная продажа</a></li><a class="graphics__marking-square graphics__marking-square--blue"></a>
+              <li class="graphics__marking-item"><a href="#" class="graphics__marking-link">продажа по рекомендациям</a></li><a class="graphics__marking-square graphics__marking-square--white"></a>
+              <li class="graphics__marking-item"><a href="#" class="graphics__marking-link">обычная продажа</a></li>
+            </ul>
+          </div>
+        </section>
+        <aside class="statistics">
+          <section class="statistics__test">
+            <div class="statistics__title">А/В ТЕСТ
+              <select class="select">
+                <option class="select-choose">СТАТУС</option>
+              </select>
+            </div>
+            <div class="statistics__test">
+              <div class="statistics__test-switch"></div>
+              <div class="statistics__test-time">1Д 23:18</div>
+            </div>
+          </section>
+          <section class="statistics__block">
+            <div class="statistics__title">КОНВЕРСИЯ</div>
+            <div class="statistics__text">
+              <div class="statistics__text-small"><span class="text-small__number">3.0</span>
+                <p class="text-small">Стандартная конверсия</p>
+              </div>
+              <div class="statistics__text-big"><span class="text-big__number">3.6</span>
+                <p class="text-big">ДОСТИГНУТО С REES46</p>
+              </div>
+            </div>
+          </section>
+          <section class="statistics__block">
+            <div class="statistics__title">СРЕДНИЙ ЧЕК</div>
+            <div class="statistics__text">
+              <div class="statistics__text-small"><span class="text-small__number">1600</span>
+                <p class="text-small">Средняя сумма чека</p>
+              </div>
+              <div class="statistics__text-big"><span class="text-big__number">1680</span>
+                <p class="text-big">ДОСТИГНУТО С REES46</p>
+              </div>
+            </div>
+          </section>
+          <section class="statistics__block">
+            <div class="statistics__title">ВЫРУЧКА</div>
+            <div class="statistics__text">
+              <div class="statistics__text-small"><span class="text-small__number">3.6М</span>
+                <p class="text-small">Стандартная выручка</p>
+              </div>
+              <div class="statistics__text-big"><span class="text-big__number">3.7М</span>
+                <p class="text-big">ДОСТИГНУТО С REES46</p>
+              </div>
+            </div>
+          </section>
+        </aside>
+        <section class="order-list">
+          <div class="order-list__title"></div>
+          <select class="select">
+            <option class="select-choose"> ВСЕ ЗАКАЗЫ  </option>
+            <option class="select-choose"> ТОЛЬКО РЕКОМЕНДОВАННЫЕ </option>
+          </select>
+        </section>
+      </div>
+    </div>
+    <!-- build:js js/vendor.min.js-->
+    <!-- bower:js-->
+    <!--script(src='bower/jquery/dist/jquery.js')-->
+    <!-- endbower-->
+    <!-- endbuild-->
+    
+    
+    <!-- build:js js/main.min.js-->
+    <!-- endbuild-->
+    <!-- build:js js/plugins.js-->
+    <!-- endbuild-->
+  </body>
+</html>

@@ -38,13 +38,18 @@ p {
 
 /* --------- adjustment --------- */
 
-$container-width    : 1000px;
-$footer-height      : 230px;
+$container-width:			999px;
+$footer-height:				172px;
 
 .container {
-	width: @container-width;
+	width: $container-width ;
 	margin: 0 auto;
 	position: relative;
+}
+
+body {
+	background-color:$wrapper-bg;
+	color: white;
 }
 
 .wrapper {
@@ -54,19 +59,6 @@ $footer-height      : 230px;
 	height: 100%;
 	overflow: hidden;
 	min-width: $container-width + 20;
-
-	&:after {
-		content: "";
-		display: block;
-		position: relative;
-		height: $footer-height;
-	}
-
 }
 
-footer {
-	position: relative;
-	margin-top: -$footer-height;
-	height: $footer-height;
-	min-width: $container-width + 20;
-}
+

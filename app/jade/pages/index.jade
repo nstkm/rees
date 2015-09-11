@@ -1,10 +1,14 @@
-﻿extends ../_layouts/main_layout
+﻿extends ../layouts/main_layout.jade
 
 block title
-	title Main Page
+	title REES
 
 block content
-	.wrapper
-		.main-content
 			.container
-				// content here
+				include ../common/graphics.jade
+				include ../common/aside.jade
+				section.order-list
+					.order-list__title
+					select.select
+						each items in [" ВСЕ ЗАКАЗЫ  ", " ТОЛЬКО РЕКОМЕНДОВАННЫЕ " ]
+							option.select-choose= items

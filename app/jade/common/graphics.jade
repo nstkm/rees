@@ -1,0 +1,25 @@
+﻿section.graphics
+		.graphics__display
+			.container
+				.graphics__display-sales
+					.display-sales__title ОТНОШЕНИЯ ОБЪЁМОВ ПРОДАЖ
+					.display-sales__cicles
+					p.display-sales__text На графиках отображаются прирост продаж за счёт внедрения модуля Rees46
+				.graphics__display-efficiency
+					.display-efficiency__title ТЕКУЩАЯ ЭФФЕКТИВНОСТЬ
+					select.select.display-efficiency__select
+							each items in [" ЗА 1 НЕДЕЛЮ ", " ЗА 2 НЕДЕЛИ " , " ВСЯ ИСТОРИЯ"]
+								option.select-choose= items
+					.display-efficiency__chart
+
+		.graphics__marking
+					ul.graphics__marking-list
+									a.graphics__marking-square.graphics__marking-square--grey
+									li.graphics__marking-item
+										a.graphics__marking-link(href="#") обычная продажа
+									a.graphics__marking-square.graphics__marking-square--blue
+									li.graphics__marking-item
+										a.graphics__marking-link(href="#") продажа по рекомендациям
+									a.graphics__marking-square.graphics__marking-square--white
+									li.graphics__marking-item
+										a.graphics__marking-link(href="#") обычная продажа

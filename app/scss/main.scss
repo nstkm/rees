@@ -1,4 +1,8 @@
-﻿/* --------- mixins --------- */
+﻿/* --------- normalize --------- */
+
+@import "_includes/normalize";
+
+/* --------- mixins --------- */
 
 @import "_includes/mixins";
 
@@ -10,8 +14,14 @@
 
 @import "_includes/fonts";
 
-/* --------- fonts --------- */
+/* --------- default --------- */
 
-@import "_includes/default";
+@import "_includes/default.scss";
 
 /* --------- sections --------- */
+@import "sections/header.scss";
+@import "sections/graphics.scss";
+@import "sections/aside.scss";
+@import "sections/order-list.scss";
+
+

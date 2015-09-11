@@ -1,0 +1,124 @@
+﻿.graphics {
+	margin-bottom: 40px;
+	background: $container-bg;
+	@include clearfix();
+	@include box-sizing(border-box);
+		&__display {
+			min-height: 320px;
+		}
+		&__display-sales {
+			float: left;
+			width: 320px;
+			padding: 0px 20px;
+		}
+		&__display-efficiency{
+			float: right;
+			width: 600px;
+			padding: 0px 19px;
+		}
+}
+.display-sales {
+	&__title {
+		font-family: 'robotobold';
+		font-size: 12px;
+		text-align: center;
+		padding: 20px;
+
+
+	}
+	&__text {
+		font-family: "RobotoRegular";
+		font-size: 9px;
+		color: $grey-text;
+	}
+}
+
+
+.display-efficiency {
+		&__title {
+			text-align: center;
+			font-family: 'robotoblack';
+			font-size: 12px;
+			padding: 20px 0px;
+		}
+		&__select {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		}
+}
+.display-sales__cicles {
+	border-top: 1px solid #182933;
+		@include box-shadow(0px -1px 0px 0px rgba(255, 255, 255, 0.05));
+}
+.display-efficiency__chart{
+			border-top: 1px solid #182933;
+		@include box-shadow(0px -1px 0px 0px rgba(255, 255, 255, 0.05));
+}
+/* общий стиль для селекта */
+select {
+	background:$container-bg;
+	width: 100px;
+	height: 19px;
+	border: none;
+	outline: none;
+	font-family: 'robotolight';
+	font-size: 11px;
+	color: white;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFBAMAAABlfdtYAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAvKSKBtLItxYVDwpUdRunAAAAJklEQVQI12OwOXPmjAED05kzhxgYWGTOiDAwMCw9tgFIclQyMAAAoUMIyWAnwPgAAAAASUVORK5CYII=");
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-position: 85px center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+
+.graphics__marking-square{
+		box-shadow: inset 0px 0px 2px 0px #949494;
+		width: 10px;
+		height: 10px;
+		border: 1px solid white;
+		margin: 14px 0px;
+		display: inline-block;
+			&:first-child{
+				margin-left: 19px;
+			}
+		&--grey{
+			background:$graph-square-darkblue;
+		}
+		&--white {
+			background:white;
+		}
+		&--blue {
+			background: $main-blue;
+		}
+}
+
+.graphics__marking {
+	height: 40px;
+	background: $marking-bg;
+		&-item {
+			@include inlineblock();
+			margin: 9px 47px 10px 0px;
+			&:first-child {
+				margin-left: 37px;
+				}
+		}
+}
+
+.graphics__marking-link {
+		text-decoration: none;
+		color: $grey-text;
+		font-family: "RobotoRegular";
+		font-size: 9px;
+			&:before{
+				content : "— ";
+			}
+}
