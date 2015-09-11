@@ -6,6 +6,11 @@
         min-height: 200px;
         position: relative;
         background:$container-bg;
+            &-time {
+                float: right;
+                font-family: 'robotolight';
+                font-size: 48px;
+            }
     }
     &__title {
         font-size: 12px;
@@ -20,17 +25,17 @@
     }
 }
 
-.statistics__test-info {
-    .statistics__text {
+.statistics__test-info , .statistics__text {
     width: 320px;
     margin: 0 auto;
     border-top: 1px solid #182933;
     @include box-shadow(0px -1px 0px 0px rgba(255, 255, 255, 0.05));
     }
-}
+
 .select__test {
+    width: 60px;
     position: absolute;
-    right: 0px;
+    right: 21px;
     top:24px;
-    background-position: 85px center;
+    background-position: 51px center;
 }
