@@ -735,7 +735,7 @@ select {
     font-size: 12px;
     font-family: 'robotobold';
     text-align: center;
-    padding: 25px 0px; }
+    padding: 21px 0px; }
   .statistics__block {
     margin-bottom: 10px;
     min-height: 230px;
@@ -750,15 +750,15 @@ select {
   box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05); }
 
 .select__test {
-  width: 60px;
+  width: 63px;
   position: absolute;
-  right: 21px;
-  top: 24px;
-  background-position: 51px center; }
+  right: 23px;
+  top: 18px;
+  background-position: 53px center; }
 
 /* для маленького текста */
 .statistics__text {
-  padding-top: 30px; }
+  padding-top: 22px; }
   .statistics__text-small {
     color: #6d767b; }
 
@@ -780,11 +780,11 @@ select {
     background-clip: padding-box;
     text-align: center;
     background: #6d767b;
-    margin-right: 9px; }
+    margin-right: 5px; }
   .text-small__number {
+    margin: 0px 7px 0px 19px;
     font-family: 'robotobold';
-    font-size: 24.27px;
-    margin-right: 8px; }
+    font-size: 24.27px; }
 
 .statistics__text-item {
   display: inline-block; }
@@ -792,6 +792,7 @@ select {
 /* для большого текста */
 .text-big {
   vertical-align: top;
+  padding-top: 27px;
   width: 93px;
   font-family: 'robotoregular';
   font-size: 14px;
@@ -814,7 +815,8 @@ select {
   .text-big__number {
     font-family: 'robotolight';
     font-size: 60px;
-    margin-right: 20px; }
+    margin: 0px 17px 0px 17px;
+    line-height: 64px; }
 
 .order-list {
   float: right;
