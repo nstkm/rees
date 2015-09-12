@@ -42,6 +42,7 @@
 			padding: 20px 0px;
 		}
 		&__select {
+		text-transform: uppercase;
 		position: absolute;
 		right: 20px;
 		top: 20px;
@@ -66,18 +67,18 @@ select {
 	font-size: 11px;
 	color: white;
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFBAMAAABlfdtYAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAvKSKBtLItxYVDwpUdRunAAAAJklEQVQI12OwOXPmjAED05kzhxgYWGTOiDAwMCw9tgFIclQyMAAAoUMIyWAnwPgAAAAASUVORK5CYII=");
-  -webkit-appearance: none;
-  cursor: pointer;
-  background-position: 85px center;
-  background-repeat: no-repeat;
-  line-height: 1em;
-  /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none!important;
+	-webkit-appearance: none;
+	cursor: pointer;
+	background-position: 85px center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
 }
 
 .graphics__marking-square{

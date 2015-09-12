@@ -649,6 +649,7 @@ header .container {
   padding: 20px 0px; }
 
 .display-efficiency__select {
+  text-transform: uppercase;
   position: absolute;
   right: 20px;
   top: 20px; }
