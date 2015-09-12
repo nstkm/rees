@@ -6,9 +6,12 @@ block title
 block content
 			.container
 				include ../common/graphics.jade
-				include ../common/aside.jade
-				section.order-list
-					.order-list__title
-					select.select.select__order
-						each items in [" ВСЕ ЗАКАЗЫ  ", " ТОЛЬКО РЕКОМЕНДОВАННЫЕ " ]
-							option.select-choose= items
+				.main-content
+					include ../common/aside.jade
+					section.order-list
+						.order-list__title
+							span.order-list__title-text список заказов за
+							span.order-list__title-data какое то число
+						select.select.select__order
+							each items in [" ВСЕ ЗАКАЗЫ  ", " ТОЛЬКО РЕКОМЕНДОВАННЫЕ " ]
+								option.select-choose= items

@@ -550,6 +550,10 @@ body {
   overflow: hidden;
   min-width: 1019px; }
 
+.main-content {
+  margin-bottom: 172px;
+  min-height: 920px; }
+
 /* --------- sections --------- */
 .header {
   background: #0a1216;
@@ -813,7 +817,7 @@ select {
   font-family: 'robotobold';
   font-size: 19px;
   top: 19px;
-  left: 8px; }
+  left: 5px; }
 
 .text-big {
   vertical-align: top;
@@ -931,9 +935,17 @@ select {
 .order-list {
   float: right;
   width: 630px;
-  position: relative; }
+  position: relative;
+  background: #203541;
+  min-height: 920px; }
+  .order-list__title {
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'robotobold';
+    font-size: 12px;
+    text-transform: uppercase; }
 
 .select__order {
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: 13px;
+  top: 18px; }

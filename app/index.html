@@ -66,77 +66,79 @@
             </ul>
           </div>
         </section>
-        <aside class="statistics">
-          <section class="statistics__test">
-            <div class="statistics__title">А/В ТЕСТ</div>
-            <select class="select select__test">
-              <option class="select-choose">СТАТУС</option>
-            </select>
-            <div class="statistics__test-info">
-              <div class="statistics__test-switch--wrap">
-                <div class="statistics__test-switch">
-                  <input type="radio" name="switch" id="switch-on" checked class="test-switch__input">
-                  <input type="radio" name="switch" id="switch-off" class="test-switch__input">
-                  <label for="switch-on" class="test-switch__label-on">Включен</label>
-                  <label for="switch-off" class="test-switch__label-off">Выключен</label><span class="test-switch__toggle"></span>
+        <div class="main-content">
+          <aside class="statistics">
+            <section class="statistics__test">
+              <div class="statistics__title">А/В ТЕСТ</div>
+              <select class="select select__test">
+                <option class="select-choose">СТАТУС</option>
+              </select>
+              <div class="statistics__test-info">
+                <div class="statistics__test-switch--wrap">
+                  <div class="statistics__test-switch">
+                    <input type="radio" name="switch" id="switch-on" checked class="test-switch__input">
+                    <input type="radio" name="switch" id="switch-off" class="test-switch__input">
+                    <label for="switch-on" class="test-switch__label-on">Включен</label>
+                    <label for="switch-off" class="test-switch__label-off">Выключен</label><span class="test-switch__toggle"></span>
+                  </div>
                 </div>
+                <div class="statistics__test-time">1Д 23:18</div>
               </div>
-              <div class="statistics__test-time">1Д 23:18</div>
-            </div>
+            </section>
+            <section class="statistics__block">
+              <div class="statistics__title">КОНВЕРСИЯ</div>
+              <div class="statistics__text">
+                <ul class="statistics__text-small">
+                  <li class="statistics__text-item text-small__number">3.0</li>
+                  <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
+                  <li class="statistics__text-item text-small">Стандартная конверсия</li>
+                </ul>
+                <ul class="statistics__text-big">
+                  <li class="statistics__text-item text-big__number">3.6</li>
+                  <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent">%</a></li>
+                  <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
+                </ul>
+              </div>
+            </section>
+            <section class="statistics__block">
+              <div class="statistics__title">СРЕДНИЙ ЧЕК</div>
+              <div class="statistics__text">
+                <ul class="statistics__text-small">
+                  <li class="statistics__text-item text-small__number">	1600</li>
+                  <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
+                  <li class="statistics__text-item text-small">Средняя сумма чека</li>
+                </ul>
+                <ul class="statistics__text-big">
+                  <li class="statistics__text-item text-big__number">1680</li>
+                  <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent-rub">руб</a></li>
+                  <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
+                </ul>
+              </div>
+            </section>
+            <section class="statistics__block">
+              <div class="statistics__title">ВЫРУЧКА</div>
+              <div class="statistics__text">
+                <ul class="statistics__text-small">
+                  <li class="statistics__text-item text-small__number">	3.5M</li>
+                  <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
+                  <li class="statistics__text-item text-small">Стандартная выручка</li>
+                </ul>
+                <ul class="statistics__text-big">
+                  <li class="statistics__text-item text-big__number">3.7М</li>
+                  <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent-rub">руб</a></li>
+                  <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
+                </ul>
+              </div>
+            </section>
+          </aside>
+          <section class="order-list">
+            <div class="order-list__title"><span class="order-list__title-text">список заказов за</span><span class="order-list__title-data">какое то число</span></div>
+            <select class="select select__order">
+              <option class="select-choose"> ВСЕ ЗАКАЗЫ  </option>
+              <option class="select-choose"> ТОЛЬКО РЕКОМЕНДОВАННЫЕ </option>
+            </select>
           </section>
-          <section class="statistics__block">
-            <div class="statistics__title">КОНВЕРСИЯ</div>
-            <div class="statistics__text">
-              <ul class="statistics__text-small">
-                <li class="statistics__text-item text-small__number">3.0</li>
-                <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
-                <li class="statistics__text-item text-small">Стандартная конверсия</li>
-              </ul>
-              <ul class="statistics__text-big">
-                <li class="statistics__text-item text-big__number">3.6</li>
-                <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent">%</a></li>
-                <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
-              </ul>
-            </div>
-          </section>
-          <section class="statistics__block">
-            <div class="statistics__title">СРЕДНИЙ ЧЕК</div>
-            <div class="statistics__text">
-              <ul class="statistics__text-small">
-                <li class="statistics__text-item text-small__number">	1600</li>
-                <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
-                <li class="statistics__text-item text-small">Средняя сумма чека</li>
-              </ul>
-              <ul class="statistics__text-big">
-                <li class="statistics__text-item text-big__number">1680</li>
-                <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent-rub">руб</a></li>
-                <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
-              </ul>
-            </div>
-          </section>
-          <section class="statistics__block">
-            <div class="statistics__title">ВЫРУЧКА</div>
-            <div class="statistics__text">
-              <ul class="statistics__text-small">
-                <li class="statistics__text-item text-small__number">	3.5M</li>
-                <li class="statistics__text-item text-small__percent-wrap"><a href="#" class="text__percent text-small__percent">%</a></li>
-                <li class="statistics__text-item text-small">Стандартная выручка</li>
-              </ul>
-              <ul class="statistics__text-big">
-                <li class="statistics__text-item text-big__number">3.7М</li>
-                <li class="statistics__text-item text-big__percent-wrap"><a href="#" class="text__percent text-big__percent-rub">руб</a></li>
-                <li class="statistics__text-item text-big">ДОСТИГНУТО С REES46</li>
-              </ul>
-            </div>
-          </section>
-        </aside>
-        <section class="order-list">
-          <div class="order-list__title"></div>
-          <select class="select select__order">
-            <option class="select-choose"> ВСЕ ЗАКАЗЫ  </option>
-            <option class="select-choose"> ТОЛЬКО РЕКОМЕНДОВАННЫЕ </option>
-          </select>
-        </section>
+        </div>
       </div>
     </div>
     <!-- build:js js/vendor.min.js-->
