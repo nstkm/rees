@@ -39,3 +39,44 @@
     top:24px;
     background-position: 51px center;
 }
+/* для маленького текста */
+.statistics__text {
+    padding-top: 30px;
+    &-small {
+        color:$grey-text ;
+    }
+}
+.text-small {
+    font : {
+            family: "RobotoRegular";
+            size : 9px;
+        }
+    width: 60px;
+    line-height: 10px;
+    &__percent {
+        font : {
+            family: "MyriadProRegular";
+           // size : 9px;
+        }
+            // content : ' % ';
+            color: $container-bg;
+            width: 17px;
+            height: 17px;
+            @include border-radius(50px);
+            text-align: center;
+            background:$grey-text;
+            margin-right: 9px;
+    }
+    &__number {
+        font : {
+            family:  'robotobold';
+            size : 24.27px;
+        }
+        margin-right: 8px;
+
+    }
+}
+.statistics__text-item {
+    display: inline-block;
+}
+

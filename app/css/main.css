@@ -756,6 +756,39 @@ select {
   top: 24px;
   background-position: 51px center; }
 
+/* для маленького текста */
+.statistics__text {
+  padding-top: 30px; }
+  .statistics__text-small {
+    color: #6d767b; }
+
+.text-small {
+  font-family: "RobotoRegular";
+  font-size: 9px;
+  width: 60px;
+  line-height: 10px; }
+  .text-small__percent {
+    font-family: "MyriadProRegular";
+    color: #203541;
+    width: 17px;
+    height: 17px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    text-align: center;
+    background: #6d767b;
+    margin-right: 9px; }
+  .text-small__number {
+    font-family: 'robotobold';
+    font-size: 24.27px;
+    margin-right: 8px; }
+
+.statistics__text-item {
+  display: inline-block; }
+
 .order-list {
   float: right;
   width: 630px;
