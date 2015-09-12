@@ -789,6 +789,33 @@ select {
 .statistics__text-item {
   display: inline-block; }
 
+/* для большого текста */
+.text-big {
+  vertical-align: top;
+  width: 93px;
+  font-family: 'robotoregular';
+  font-size: 14px;
+  line-height: 16px;
+  color: #00aeef; }
+  .text-big__percent {
+    font-family: "MyriadProRegular";
+    color: #203541;
+    width: 42px;
+    height: 42px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    text-align: center;
+    background: #00aeef;
+    margin-right: 4px; }
+  .text-big__number {
+    font-family: 'robotolight';
+    font-size: 60px;
+    margin-right: 20px; }
+
 .order-list {
   float: right;
   width: 630px;

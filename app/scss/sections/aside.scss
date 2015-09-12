@@ -80,3 +80,37 @@
     display: inline-block;
 }
 
+/* для большого текста */
+
+.text-big {
+        vertical-align: top;
+        padding-top: 27px;
+        width: 93px;
+        font : {
+            family:  'robotoregular';
+            size : 14px;
+        }
+        line-height: 16px;
+        color: $main-blue;
+        &__percent {
+        font : {
+            family: "MyriadProRegular";
+           // size : 9px;
+        }
+            color: $container-bg;
+            width: 42px;
+            height: 42px;
+            @include border-radius(50px);
+            text-align: center;
+            background: $main-blue;
+            margin-right: 4px;
+    }
+    &__number {
+        font : {
+            family:  'robotolight';
+            size : 60px;
+        }
+        margin-right: 20px;
+    }
+}
+
