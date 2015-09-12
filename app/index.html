@@ -73,7 +73,14 @@
               <option class="select-choose">СТАТУС</option>
             </select>
             <div class="statistics__test-info">
-              <div class="statistics__test-switch"></div>
+              <div class="statistics__test-switch--wrap">
+                <div class="statistics__test-switch">
+                  <input type="radio" name="switch" id="switch-on" checked class="test-switch__input">
+                  <input type="radio" name="switch" id="switch-off" class="test-switch__input">
+                  <label for="switch-on" class="test-switch__label-on">Включен</label>
+                  <label for="switch-off" class="test-switch__label-off">Выключен</label><span class="test-switch__toggle"></span>
+                </div>
+              </div>
               <div class="statistics__test-time">1Д 23:18</div>
             </div>
           </section>

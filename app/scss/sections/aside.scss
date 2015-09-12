@@ -7,7 +7,7 @@
 		position: relative;
 		background:$container-bg;
 			&-time {
-				float: right;
+				display: inline-block;
 				font-family: 'robotolight';
 				font-size: 48px;
 			}
@@ -116,3 +116,102 @@
 	}
 }
 
+
+
+
+/* ---------- SWITCH ---------- */
+
+.statistics__test-info {
+	//position: absolute;
+
+
+}
+
+.statistics__test-switch {
+	margin: 40px 34px 0px 31px;
+	background: #0d161c;
+	border-radius: 32px;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	width: 20px;
+	margin-right: 43px;
+		&--wrap {
+			display: inline-block;
+			min-height: 100px;
+		}
+}
+
+.statistics__test-switch label {
+	color: #fff;
+	font-size: 8.78px;
+	line-height: 10px;
+	@include transition (color .2s ease);
+}
+
+.statistics__test-switch .test-switch__label-on {
+	top: -25px;
+	left: -9px;
+	position: absolute;
+}
+
+.statistics__test-switch .test-switch__label-off{
+	position: absolute;
+	bottom: -20px;
+	left: -13px;
+}
+
+.statistics__test-switch .test-switch__input{
+	height: 40px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 20px;
+	z-index: 2;
+}
+
+.statistics__test-switch input:checked~.test-switch__label-on{
+ color: #fff;
+  }
+.statistics__test-switch input:checked~.test-switch__label-off {
+	color: $grey-text;
+	 }
+
+.statistics__test-switch input~:checked~.test-switch__label-on {
+ color: $grey-text;
+  }
+.statistics__test-switch input~:checked~.test-switch__label-off {
+	color: #fff;
+}
+
+.statistics__test-switch input:checked~.test-switch__toggle {
+	left: 0px;
+}
+
+.statistics__test-switch input~:checked~.test-switch__toggle{
+	top: 20px;
+}
+
+.statistics__test-switch input:checked {
+	z-index: 0;
+}
+
+.test-switch__toggle{
+	background: #00aeef;
+	border-radius: 50px;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 0px;
+	@include transition (top .2s ease);
+	width: 20px;
+	z-index: 1;
+	@include box-shadow (-1px 0px 16.38px 9px rgba(0, 174, 239, 0.34));
+}
+.test-switch__label-on , .test-switch__label-off {
+		font : {
+			family:  'robotoregular';
+			size : 8.78px;
+		}
+}

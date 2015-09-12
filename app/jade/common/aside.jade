@@ -4,7 +4,13 @@
 		select.select.select__test
 			option.select-choose СТАТУС
 		.statistics__test-info
-			.statistics__test-switch
+			.statistics__test-switch--wrap
+				.statistics__test-switch
+					input.test-switch__input(type="radio" name="switch" id="switch-on" checked)
+					input.test-switch__input(type="radio" name="switch" id="switch-off")
+					label.test-switch__label-on(for="switch-on") Включен
+					label.test-switch__label-off(for="switch-off") Выключен
+					span.test-switch__toggle
 			.statistics__test-time 1Д 23:18
 	section.statistics__block
 		.statistics__title КОНВЕРСИЯ
