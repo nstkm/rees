@@ -54,19 +54,14 @@
 		}
 	width: 60px;
 	line-height: 10px;
-	&__percent {
-		font : {
-			family: "MyriadProRegular";
-		   // size : 9px;
-		}
-			// content : ' % ';
-			color: $container-bg;
+	&__percent-wrap {
 			width: 17px;
 			height: 17px;
 			@include border-radius(50px);
-			text-align: center;
 			background:$grey-text;
 			margin-right: 5px;
+			position: relative;
+			text-align: center;
 	}
 	&__number {
 		margin: 0px 7px 0px 19px;
@@ -81,8 +76,40 @@
 	display: inline-block;
 }
 
-/* для большого текста */
+.text__percent{
+	cursor: none;
+	position: absolute;
+	text-decoration: none;
+	line-height: 0;
+	text-align: center;
+	color: $container-bg;
+}
+.text-small__percent {
+	font : {
+			family: "MyriadProRegular";
+			size: 14px;
+		}
+	top: 10px;
+	left: 3px;
+}
 
+/* для большого текста */
+.text-big__percent {
+	font : {
+			family: 'robotobold';
+			size: 39px;
+		}
+	top: 19px;
+	left: 8px;
+}
+.text-big__percent-rub {
+	font : {
+			family: 'robotobold';
+			size: 19px;
+		}
+	top: 19px;
+	left: 5px;
+}
 .text-big {
 		vertical-align: top;
 		padding-top: 19px;
@@ -93,14 +120,11 @@
 		}
 		line-height: 16px;
 		color: $main-blue;
-		&__percent {
-		font : {
-			family: "MyriadProRegular";
-		   // size : 9px;
-		}
-			color: $container-bg;
+
+		&__percent-wrap {
 			width: 42px;
 			height: 42px;
+			position: relative;
 			@include border-radius(50px);
 			text-align: center;
 			background: $main-blue;
@@ -115,6 +139,7 @@
 		line-height: 64px;
 	}
 }
+
 
 
 

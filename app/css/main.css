@@ -767,9 +767,7 @@ select {
   font-size: 9px;
   width: 60px;
   line-height: 10px; }
-  .text-small__percent {
-    font-family: "MyriadProRegular";
-    color: #203541;
+  .text-small__percent-wrap {
     width: 17px;
     height: 17px;
     -webkit-border-radius: 50px;
@@ -778,9 +776,10 @@ select {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    text-align: center;
     background: #6d767b;
-    margin-right: 5px; }
+    margin-right: 5px;
+    position: relative;
+    text-align: center; }
   .text-small__number {
     margin: 0px 7px 0px 19px;
     font-family: 'robotobold';
@@ -789,7 +788,33 @@ select {
 .statistics__text-item {
   display: inline-block; }
 
+.text__percent {
+  cursor: none;
+  position: absolute;
+  text-decoration: none;
+  line-height: 0;
+  text-align: center;
+  color: #203541; }
+
+.text-small__percent {
+  font-family: "MyriadProRegular";
+  font-size: 14px;
+  top: 10px;
+  left: 3px; }
+
 /* для большого текста */
+.text-big__percent {
+  font-family: 'robotobold';
+  font-size: 39px;
+  top: 19px;
+  left: 8px; }
+
+.text-big__percent-rub {
+  font-family: 'robotobold';
+  font-size: 19px;
+  top: 19px;
+  left: 8px; }
+
 .text-big {
   vertical-align: top;
   padding-top: 19px;
@@ -798,11 +823,10 @@ select {
   font-size: 14px;
   line-height: 16px;
   color: #00aeef; }
-  .text-big__percent {
-    font-family: "MyriadProRegular";
-    color: #203541;
+  .text-big__percent-wrap {
     width: 42px;
     height: 42px;
+    position: relative;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
