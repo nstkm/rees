@@ -80,6 +80,10 @@ select {
 	-ms-appearance: none;
 	appearance: none!important;
 }
+/* for IE */
+select::-ms-expand {
+		display: none;
+}
 /* маркировка  */
 .graphics__marking-square{
 		box-shadow: inset 0px 0px 2px 0px #949494;
