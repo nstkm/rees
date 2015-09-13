@@ -80,7 +80,7 @@ select {
 	-ms-appearance: none;
 	appearance: none!important;
 }
-
+/* маркировка  */
 .graphics__marking-square{
 		box-shadow: inset 0px 0px 2px 0px #949494;
 		width: 10px;
@@ -115,6 +115,7 @@ select {
 }
 
 .graphics__marking-link {
+		cursor: default;
 		text-decoration: none;
 		color: $grey-text;
 		font-family: "RobotoRegular";
