@@ -136,11 +136,17 @@
           </aside>
           <section class="order-list">
             <div class="order-list__title"><span class="order-list__title-text">список заказов за</span><span class="order-list__title-data">число</span></div>
-            <select class="select select__order">
-              <!--each items in [" все заказы  ", " только рекомендованные " ]-->
-              <option class="select-choose">все заказы</option>
-              <option class="select-choose__recomend">только рекомендованные</option>
-            </select>
+            <!--select.select.select__order
+            //each items in [" все заказы  ", " только рекомендованные " ]
+            option.select-choose все заказы
+            option.select-choose__recomend только рекомендованные
+            -->
+            <div id="dd" tabindex="1" class="wrapper-dropdown"><span>все заказы</span>
+              <ul class="dropdown">
+                <li><a href="#">все заказы</a></li>
+                <li class="only"><a href="#">только рекомендованные</a></li>
+              </ul>
+            </div>
             <div class="order-list__line"></div>
             <table id="my-ajax-table" class="order-list__table">
               <tr class="order-list__table-title">
@@ -164,8 +170,9 @@
     
     
     <!-- build:js js/main.min.js-->
-    <script src="js/main.js"></script>
-    <script src="js/canvas.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/canvas.js"></script>
     <!-- endbuild-->
     <!-- build:js js/plugins.js-->
     <!-- endbuild-->

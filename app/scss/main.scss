@@ -14,14 +14,10 @@
 
 @import "_includes/variables";
 
-/* --------- default --------- */
-
-@import "_includes/default.scss";
-
-
-
 /* --------- sections --------- */
 @import "sections/header.scss";
+@import "sections/select.scss";
+@import "sections/default.scss";
 @import "sections/graphics.scss";
 @import "sections/aside.scss";
 @import "sections/order-list.scss";
