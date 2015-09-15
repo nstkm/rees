@@ -452,56 +452,6 @@ table {
 /* --------- flexbox --------- */
 /* --------- variables --------- */
 /* ---- ПЕРЕМЕННЫЕ ----- */
-/* --------- fonts --------- */
-@font-face {
-  font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: 'arialregular';
-  src: url("../fonts/arialregular-webfont.eot");
-  src: url("../fonts/arialregular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/arialregular-webfont.woff2") format("woff2"), url("../fonts/arialregular-webfont.woff") format("woff"), url("../fonts/arialregular-webfont.ttf") format("truetype"), url("../fonts/arialregular-webfont.svg#arialregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'robotoblack';
-  src: url("../fonts/roboto-black-webfont.eot");
-  src: url("../fonts/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff"), url("../fonts/roboto-black-webfont.ttf") format("truetype"), url("../fonts/roboto-black-webfont.svg#robotoblack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/roboto-bold-webfont.eot");
-  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'robotolight';
-  src: url("../fonts/roboto-light-webfont.eot");
-  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'robotoregular';
-  src: url("../fonts/roboto-regular-webfont.eot");
-  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /* --------- default --------- */
 /* --------- base --------- */
 html {
@@ -553,6 +503,56 @@ body {
 .main-content {
   margin-bottom: 172px;
   min-height: 920px; }
+
+/* --------- fonts --------- */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'arialregular';
+  src: url("../fonts/arialregular-webfont.eot");
+  src: url("../fonts/arialregular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/arialregular-webfont.woff2") format("woff2"), url("../fonts/arialregular-webfont.woff") format("woff"), url("../fonts/arialregular-webfont.ttf") format("truetype"), url("../fonts/arialregular-webfont.svg#arialregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url("../fonts/roboto-black-webfont.eot");
+  src: url("../fonts/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff"), url("../fonts/roboto-black-webfont.ttf") format("truetype"), url("../fonts/roboto-black-webfont.svg#robotoblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /* --------- sections --------- */
 .header {
@@ -946,6 +946,9 @@ select::-ms-expand {
   font-family: 'robotoregular';
   font-size: 8.78px; }
 
+.statistics__text-big {
+  padding: 0; }
+
 .order-list {
   float: right;
   width: 630px;
@@ -953,7 +956,7 @@ select::-ms-expand {
   background: #203541;
   min-height: 920px; }
   .order-list__title {
-    padding: 20px 0px;
+    padding: 21px 0px;
     text-align: center;
     font-family: 'robotobold';
     font-size: 12px;
@@ -962,4 +965,40 @@ select::-ms-expand {
 .select__order {
   position: absolute;
   right: 13px;
-  top: 18px; }
+  top: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* Запрещаем перенос строк */
+  overflow: hidden;
+  /* Обрезаем все, что не помещается в область */
+  /* Цвет фона */
+  /* Поля вокруг текста */
+  text-overflow: ellipsis; }
+
+.select-choose {
+  text-transform: uppercase;
+  outline: none; }
+
+.order-list__table {
+  text-align: center; }
+  .order-list__table tr {
+    font-family: "RobotoRegular";
+    font-size: 9px;
+    color: #6d767b; }
+    .order-list__table tr td:nth-child(2n) {
+      background: #28404e; }
+  .order-list__table th {
+    padding: 10px 29px 0px 36px;
+    text-align: center;
+    margin-right: 45px; }
+
+.order-list__line {
+  width: 590px;
+  margin: 0 auto;
+  border-top: 1px solid #182933;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05);
+  -moz-box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.05); }
+
+.select__long {
+  width: 175px; }

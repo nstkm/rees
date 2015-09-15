@@ -1,4 +1,5 @@
-﻿/* --------- normalize --------- */
+﻿
+/* --------- normalize --------- */
 
 @import "_includes/normalize";
 
@@ -10,13 +11,14 @@
 
 @import "_includes/variables";
 
+/* --------- default --------- */
+
+@import "_includes/default.scss";
+
 /* --------- fonts --------- */
 
 @import "_includes/fonts";
 
-/* --------- default --------- */
-
-@import "_includes/default.scss";
 
 /* --------- sections --------- */
 @import "sections/header.scss";
