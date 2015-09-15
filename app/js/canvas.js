@@ -1,4 +1,6 @@
-﻿function getTotal( arr ){
+﻿$(window).load(function(){
+
+function getTotal( arr ){
 		var j,
 				myTotal = 0;
 		for( j = 0; j < arr.length; j++) {
@@ -182,3 +184,4 @@ context.fillText("МЕСЯЦ", 50, 60);
 drawPieChart_three('myCanvas_three');
 
 
+});
