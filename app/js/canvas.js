@@ -56,8 +56,8 @@ context.textBaseline = "middle";
 context.font = "12.75px MyriadProRegular";
 context.fillStyle = "#dfe1e2";
 context.textAlign = "center";
-context.fillText("ЗА", 50, 40);
-context.fillText("ДЕНЬ", 50, 55);
+context.fillText("ЗА", 50, 45);
+context.fillText("ДЕНЬ", 50, 60);
 
  };
 
@@ -114,8 +114,8 @@ context.textBaseline = "middle";
 context.font = "12.75px MyriadProRegular";
 context.fillStyle = "#dfe1e2";
 context.textAlign = "center";
-context.fillText("ЗА", 50, 40);
-context.fillText("НЕДЕЛЮ", 50, 55);
+context.fillText("ЗА", 50, 45);
+context.fillText("НЕДЕЛЮ", 50, 60);
 
 
 
@@ -173,8 +173,8 @@ context.textBaseline = "middle";
 context.font = "12.75px MyriadProRegular";
 context.fillStyle = "#dfe1e2";
 context.textAlign = "center";
-context.fillText("ЗА", 50, 40);
-context.fillText("МЕСЯЦ", 50, 55);
+context.fillText("ЗА", 50, 45);
+context.fillText("МЕСЯЦ", 50, 60);
 
  };
 

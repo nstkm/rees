@@ -30,6 +30,9 @@
 		font-family: "RobotoRegular";
 		font-size: 9px;
 		color: $grey-text;
+		width: 225px;
+		margin-left: 15px;
+		line-height: 10px;
 	}
 }
 
@@ -127,4 +130,14 @@ select::-ms-expand {
 			&:before{
 				content : "— ";
 			}
+}
+
+/* круговые графики */
+
+.display-sales__cicles {
+	padding-top: 40px;
+	padding-bottom: 26px;
+		canvas {
+			margin-right: 3px;
+		}
 }

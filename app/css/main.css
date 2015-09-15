@@ -646,7 +646,10 @@ header .container {
 .display-sales__text {
   font-family: "RobotoRegular";
   font-size: 9px;
-  color: #6d767b; }
+  color: #6d767b;
+  width: 225px;
+  margin-left: 15px;
+  line-height: 10px; }
 
 .display-efficiency__title {
   text-align: center;
@@ -735,6 +738,13 @@ select::-ms-expand {
   font-size: 9px; }
   .graphics__marking-link:before {
     content: "— "; }
+
+/* круговые графики */
+.display-sales__cicles {
+  padding-top: 40px;
+  padding-bottom: 26px; }
+  .display-sales__cicles canvas {
+    margin-right: 3px; }
 
 .statistics {
   width: 360px;
