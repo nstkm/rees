@@ -20,7 +20,7 @@
 	top: 18px;
 	text-transform: uppercase;
 	white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */ /* Цвет фона */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */ /* Цвет фона *
   /* Поля вокруг текста */
     text-overflow: ellipsis;
 
@@ -34,28 +34,46 @@
 }
 
 .order-list__table {
-		text-align: center;
-	tr {
+	width: 610px;
+	margin: 0 auto;
+	text-align: center;
+	thead {
 		font : {
 				family: "RobotoRegular";
 				size : 9px;
 			}
 		color: $grey-text;
-			td:nth-child(2n) {
-			background: #28404e;
-
-			}
 	}
 	th {
-		padding: 10px 29px 0px 36px;
+		//padding-top: 11px;
 		text-align: center;
-		margin-right: 45px;
 	}
 }
-.order-list__table-title {
+tbody{
+			tr {
+			background: #28404e;
+			}
 
 }
+table {
+	border-collapse: separate;
+	border-spacing: 0 20px;
 
+}
+.order-list__table {
+	tbody {
+		td {
+			//padding: 5px 0;
+		}
+		td {
+		font : {
+				family: 'arialregular';
+				size : 12px;
+			}
+		color: white;
+				}
+		}
+}
 .order-list__line {
 		width: 590px;
 		margin: 0 auto;

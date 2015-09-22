@@ -55,7 +55,7 @@
                 <select class="select display-efficiency__select">
                   <option class="select-choose">за 1 неделю</option>
                   <option selected class="select-choose">за 2 недели</option>
-                  <option class="select-choose">вся история</option>
+                  <option class="select-choose_one">вся история</option>
                 </select>
                 <div class="display-efficiency__chart"></div>
               </div>
@@ -73,14 +73,16 @@
           <aside class="statistics">
             <section class="statistics__test">
               <div class="statistics__title">А/В ТЕСТ</div>
-              <select class="select select__test">
-                <option class="select-choose">СТАТУС</option>
+              <select name="select" class="select select__test">
+                <option value="0" class="select-choose">СТАТУС</option>
+                <option value="1">включен</option>
+                <option value="2">выключен</option>
               </select>
               <div class="statistics__test-info">
                 <div class="statistics__test-switch--wrap">
                   <div class="statistics__test-switch">
-                    <input type="radio" name="switch" id="switch-on" checked class="test-switch__input">
-                    <input type="radio" name="switch" id="switch-off" class="test-switch__input">
+                    <input type="radio" value="1" name="switch" id="switch-1" checked class="test-switch__input">
+                    <input type="radio" value="2" name="switch" id="switch-2" class="test-switch__input">
                     <label for="switch-on" class="test-switch__label-on">Включен</label>
                     <label for="switch-off" class="test-switch__label-off">Выключен</label><span class="test-switch__toggle"></span>
                   </div>
@@ -148,15 +150,33 @@
               </ul>
             </div>
             <div class="order-list__line"></div>
+            <div class="show">
+              <select id="how_match">
+                <option value="week">7 дней</option>
+                <option value="two_week">14 дней</option>
+                <option value="all">Все</option>
+              </select>
+            </div>
+            <div class="days">
+              <ul id="days_list"></ul>
+            </div>
+            <div class="filters">
+              <label for="is_recommended">
+                <input type="checkbox" id="is_recommended" value="1">
+              </label>
+            </div>
             <table id="my-ajax-table" class="order-list__table">
-              <tr class="order-list__table-title">
-                <th>ID заказа</th>
-                <th>Время</th>
-                <th>ID пользователя</th>
-                <th>Обычных</th>
-                <th>Рекомендованных</th>
-              </tr>
-              <tr></tr>
+              <thead>
+                <tr class="order-list__table-title">
+                  <th>ID заказа</th>
+                  <th>Время</th>
+                  <th>ID пользователя</th>
+                  <th>Обычных</th>
+                  <th>Рекомендованных</th>
+                </tr>
+              </thead>
+              <!--table.order-list__table(id="my-ajax-table")-->
+              <tbody></tbody>
             </table>
           </section>
         </div>
@@ -173,6 +193,8 @@
     <script src="./js/main.js"></script>
     <script src="./js/select.js"></script>
     <script src="./js/canvas.js"></script>
+    <script src="./js/load.worker.js"></script>
+    <script src="./js/util.js"></script>
     <!-- endbuild-->
     <!-- build:js js/plugins.js-->
     <!-- endbuild-->

@@ -25,11 +25,26 @@ block content
 										a(href="#") только рекомендованные
 
 						.order-list__line
+						div.show
+							select(id="how_match")
+								option(value="week") 7 дней
+								option(value="two_week") 14 дней
+								option(value="all") Все
+						div.days
+							ul(id="days_list")
+						div.filters
+							label(for='is_recommended')
+								input(type="checkbox" id="is_recommended" value="1")
 						table.order-list__table(id="my-ajax-table")
-							tr.order-list__table-title
-								th ID заказа
-								th Время
-								th ID пользователя
-								th Обычных
-								th Рекомендованных
-							tr
+							thead
+								tr.order-list__table-title
+									th ID заказа
+									th Время
+									th ID пользователя
+									th Обычных
+									th Рекомендованных
+							//table.order-list__table(id="my-ajax-table")
+							tbody
+
+
+

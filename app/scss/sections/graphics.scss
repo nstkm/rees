@@ -51,6 +51,9 @@
 		top: 20px;
 		}
 }
+.select__long {
+	width: 150px;
+}
 .display-sales__cicles {
 	border-top: 1px solid #182933;
 		@include box-shadow(0px -1px 0px 0px rgba(255, 255, 255, 0.05));
