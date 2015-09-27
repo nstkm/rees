@@ -3,6 +3,8 @@
 	"CHECK_WEEK": 2,
 	"CHECK_MONTH": 3,
 
+	"days": [""],
+
 	"convertDate": function (tmsmp) {
 		return new Date(tmsmp * 1000);
 	},

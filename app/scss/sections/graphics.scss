@@ -147,3 +147,11 @@ select {
 select::-ms-expand {
 		display: none;
 }
+
+/* для гистограмм */
+.histogram {
+	li {
+		display: inline-block;
+		margin-left: 20px;
+	}
+}

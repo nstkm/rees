@@ -13,27 +13,22 @@ block content
 							span.order-list__title-text список заказов за
 							span.order-list__title-data число
 						//select.select.select__order
-								//each items in [" все заказы  ", " только рекомендованные " ]
+								each items in [" все заказы  ", " только рекомендованные " ]
 								option.select-choose все заказы
-								option.select-choose__recomend только рекомендованные
+								option.select-choose(id="is_recommended" value="1") только рекомендованные
 						div(id="dd" class="wrapper-dropdown" tabindex="1")
 								span все заказы
 								ul.dropdown
 									li
 										a(href="#") все заказы
-									li.only
+									li.only()
+										input(type="checkbox" class="checkbox" id="is_recommended" value="1")
 										a(href="#") только рекомендованные
 
 						.order-list__line
-						div.show
-							select(id="how_match")
-								option(value="week") 7 дней
-								option(value="two_week") 14 дней
-								option(value="all") Все
-						div.days
-							ul(id="days_list")
-						div.filters
-							label(for='is_recommended')
+
+						//div.filters
+							//label(for='is_recommended') рекомендованные
 								input(type="checkbox" id="is_recommended" value="1")
 						table.order-list__table(id="my-ajax-table")
 							thead

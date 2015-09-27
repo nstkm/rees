@@ -10,11 +10,13 @@
 					p.display-sales__text На графиках отображаются прирост продаж за счёт внедрения модуля Rees46
 				.graphics__display-efficiency
 					.display-efficiency__title ТЕКУЩАЯ ЭФФЕКТИВНОСТЬ
-					select.select.display-efficiency__select
-								option.select-choose за 1 неделю
-								option(selected).select-choose за 2 недели
-								option.select-choose_one вся история
+					select.select.display-efficiency__select(id="how_match")
+								option.select-choose(value="week") за 1 неделю
+								option.select-choose(value="two_week" selected) за 2 недели
+								option.select-choose(value="all") вся история
 					.display-efficiency__chart
+						div.days
+							ul.histogram(id="days_list")
 
 		.graphics__marking
 					ul.graphics__marking-list

@@ -563,6 +563,9 @@ header .container {
   text-decoration: none;
   color: white; }
 
+.checkbox {
+  z-index: 1; }
+
 /* для блока с графиками */
 .graphics__dropdown {
   width: 126px;
@@ -892,6 +895,11 @@ select {
 select::-ms-expand {
   display: none; }
 
+/* для гистограмм */
+.histogram li {
+  display: inline-block;
+  margin-left: 20px; }
+
 .statistics {
   width: 360px;
   float: left; }
@@ -915,11 +923,12 @@ select::-ms-expand {
     background: #203541; }
 
 .select__test {
-  width: 63px;
+  width: 80px;
   position: absolute;
   right: 23px;
   top: 18px;
-  background-position: 53px center; }
+  text-transform: uppercase;
+  background-position: 71px center; }
 
 .statistics__test-info, .statistics__text {
   width: 320px;
@@ -1152,9 +1161,6 @@ tbody tr {
 table {
   border-collapse: separate;
   border-spacing: 0 20px; }
-
-.order-list__table tbody td {
-  padding: 5px 0; }
 
 .order-list__table tbody td {
   font-family: 'arialregular';

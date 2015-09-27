@@ -52,12 +52,16 @@
               </div>
               <div class="graphics__display-efficiency">
                 <div class="display-efficiency__title">ТЕКУЩАЯ ЭФФЕКТИВНОСТЬ</div>
-                <select class="select display-efficiency__select">
-                  <option class="select-choose">за 1 неделю</option>
-                  <option selected class="select-choose">за 2 недели</option>
-                  <option class="select-choose_one">вся история</option>
+                <select id="how_match" class="select display-efficiency__select">
+                  <option value="week" class="select-choose">за 1 неделю</option>
+                  <option value="two_week" selected class="select-choose">за 2 недели</option>
+                  <option value="all" class="select-choose">вся история</option>
                 </select>
-                <div class="display-efficiency__chart"></div>
+                <div class="display-efficiency__chart">
+                  <div class="days">
+                    <ul id="days_list" class="histogram"></ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -74,9 +78,9 @@
             <section class="statistics__test">
               <div class="statistics__title">А/В ТЕСТ</div>
               <select name="select" class="select select__test">
-                <option value="0" class="select-choose">СТАТУС</option>
-                <option value="1">включен</option>
-                <option value="2">выключен</option>
+                <option value="0" class="select-choose">статус</option>
+                <option value="1" selected class="select-choose">включен</option>
+                <option value="2" class="select-choose">выключен</option>
               </select>
               <div class="statistics__test-info">
                 <div class="statistics__test-switch--wrap">
@@ -139,32 +143,23 @@
           <section class="order-list">
             <div class="order-list__title"><span class="order-list__title-text">список заказов за</span><span class="order-list__title-data">число</span></div>
             <!--select.select.select__order
-            //each items in [" все заказы  ", " только рекомендованные " ]
+            each items in [" все заказы  ", " только рекомендованные " ]
             option.select-choose все заказы
-            option.select-choose__recomend только рекомендованные
+            option.select-choose(id="is_recommended" value="1") только рекомендованные
             -->
             <div id="dd" tabindex="1" class="wrapper-dropdown"><span>все заказы</span>
               <ul class="dropdown">
                 <li><a href="#">все заказы</a></li>
-                <li class="only"><a href="#">только рекомендованные</a></li>
+                <li class="only">
+                  <input type="checkbox" id="is_recommended" value="1" class="checkbox"><a href="#">только рекомендованные</a>
+                </li>
               </ul>
             </div>
             <div class="order-list__line"></div>
-            <div class="show">
-              <select id="how_match">
-                <option value="week">7 дней</option>
-                <option value="two_week">14 дней</option>
-                <option value="all">Все</option>
-              </select>
-            </div>
-            <div class="days">
-              <ul id="days_list"></ul>
-            </div>
-            <div class="filters">
-              <label for="is_recommended">
-                <input type="checkbox" id="is_recommended" value="1">
-              </label>
-            </div>
+            <!--div.filters
+            //label(for='is_recommended') рекомендованные
+            	input(type="checkbox" id="is_recommended" value="1")
+            -->
             <table id="my-ajax-table" class="order-list__table">
               <thead>
                 <tr class="order-list__table-title">

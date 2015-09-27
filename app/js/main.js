@@ -1,52 +1,17 @@
-﻿//$( ".display-efficiency__select" ).change(function() {
-//	$('.display-efficiency__select').addClass('select__long');
-//});
-
-/*
-var myModule = (function() {
-
-		var init = function() {
-			_setUpListeners();
-		};
-
-		var _setUpListeners = function() {
-			//_select();
-			$('.select.select__test').on('change', selRadio);
-		};
-			/* select */
-/*
-		var _select = function() {
-			$('.display-efficiency__select').addClass('select__long');
-		};
-		var selRadio = function(val) {
-		var rad = document.getElementsByName("switch");
-		for (var i = 0; i < rad.length; i++) {
-		rad[i].checked = rad[i].id == "switch-" + val;
-		}
-	};
-
-			return {
-		init : init
-	};
-
-}());
-
-myModule.init();
-*/
-
+﻿
 /* Код для статуса */
 function selRadio(val) {
 	var select = document.getElementsByName("select")[0];
 	var rad = document.getElementsByName("switch");
 	select.onchange = function () {
-	  for (var i = 0; i < rad.length; i++) {
+		for (var i = 0; i < rad.length; i++) {
 		rad[i].checked = rad[i].id == "switch-" + this.value;
-	  }
-	}
-  }
-  window.onload = selRadio;
+		}
+	};
+}
+	window.onload = selRadio;
 
-
+/* Код для вывода таблицы и данных*/
 "use strict";
 $(document).ready(function () {
 
@@ -170,11 +135,10 @@ function showTable(items, $box, $recommendChx) {
 
 		html += "<tr>\
 			<td>" + items[i]['id'] + "</td>\
-			<td>" + items[i]['user_id'] + "</td>\
 			<td>" + DateUtils.formatForShow(items[i]["date"]) + "</td>\
+			<td>" + items[i]['user_id'] + "</td>\
 			<td>" + items[i]['typical']+ "</td>\
 			<td>" + items[i]['recommended'] + "</td>\
-			<td>" + items[i]['total']+ "</td>\
 		</tr>";
 	}
 	$box.html(html);
