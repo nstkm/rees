@@ -141,6 +141,11 @@
             </section>
           </aside>
           <section class="order-list">
+            <div class="order-list__recommend">
+              <label for="is_recommended">только рекомендованные
+                <input type="checkbox" id="is_recommended" value="1">
+              </label>
+            </div>
             <div class="order-list__title"><span class="order-list__title-text">список заказов за</span><span class="order-list__title-data">число</span></div>
             <div id="dd" tabindex="1" class="wrapper-dropdown"><span>все заказы</span>
               <ul class="dropdown">
@@ -149,11 +154,6 @@
               </ul>
             </div>
             <div class="order-list__line"></div>
-            <div class="filters">
-              <label for="is_recommended">рекомендованные
-                <input type="checkbox" id="is_recommended" value="1">
-              </label>
-            </div>
             <table id="my-ajax-table" class="order-list__table">
               <thead>
                 <tr class="order-list__table-title">

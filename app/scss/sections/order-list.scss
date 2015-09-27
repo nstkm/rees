@@ -84,3 +84,13 @@ table {
 .select__long {
 		width: 175px;
 }
+
+.order-list__recommend {
+	position: absolute;
+	left: 5px;
+	top: 20px;
+	font : {
+				family: 'arialregular';
+				size : 12px;
+			}
+}

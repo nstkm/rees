@@ -9,6 +9,9 @@ block content
 				.main-content
 					include ../common/aside.jade
 					section.order-list
+						.order-list__recommend
+							label(for='is_recommended') только рекомендованные
+								input(type="checkbox" id="is_recommended" value="1")
 						.order-list__title
 							span.order-list__title-text список заказов за
 							span.order-list__title-data число
@@ -22,9 +25,6 @@ block content
 										a(href="#") только рекомендованные
 
 						.order-list__line
-						.filters
-							label(for='is_recommended') рекомендованные
-								input(type="checkbox" id="is_recommended" value="1")
 						table.order-list__table(id="my-ajax-table")
 							thead
 								tr.order-list__table-title

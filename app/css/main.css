@@ -900,6 +900,11 @@ select::-ms-expand {
   display: inline-block;
   margin-left: 20px; }
 
+.histogram {
+  margin-top: 40px; }
+  .histogram a {
+    color: #6d767b; }
+
 .statistics {
   width: 360px;
   float: left; }
@@ -1177,3 +1182,10 @@ table {
 
 .select__long {
   width: 175px; }
+
+.order-list__recommend {
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  font-family: 'arialregular';
+  font-size: 12px; }
