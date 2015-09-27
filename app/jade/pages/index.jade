@@ -12,23 +12,18 @@ block content
 						.order-list__title
 							span.order-list__title-text список заказов за
 							span.order-list__title-data число
-						//select.select.select__order
-								each items in [" все заказы  ", " только рекомендованные " ]
-								option.select-choose все заказы
-								option.select-choose(id="is_recommended" value="1") только рекомендованные
+
 						div(id="dd" class="wrapper-dropdown" tabindex="1")
 								span все заказы
 								ul.dropdown
 									li
 										a(href="#") все заказы
 									li.only()
-										input(type="checkbox" class="checkbox" id="is_recommended" value="1")
 										a(href="#") только рекомендованные
 
 						.order-list__line
-
-						//div.filters
-							//label(for='is_recommended') рекомендованные
+						.filters
+							label(for='is_recommended') рекомендованные
 								input(type="checkbox" id="is_recommended" value="1")
 						table.order-list__table(id="my-ajax-table")
 							thead

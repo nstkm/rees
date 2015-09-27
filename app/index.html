@@ -142,24 +142,18 @@
           </aside>
           <section class="order-list">
             <div class="order-list__title"><span class="order-list__title-text">список заказов за</span><span class="order-list__title-data">число</span></div>
-            <!--select.select.select__order
-            each items in [" все заказы  ", " только рекомендованные " ]
-            option.select-choose все заказы
-            option.select-choose(id="is_recommended" value="1") только рекомендованные
-            -->
             <div id="dd" tabindex="1" class="wrapper-dropdown"><span>все заказы</span>
               <ul class="dropdown">
                 <li><a href="#">все заказы</a></li>
-                <li class="only">
-                  <input type="checkbox" id="is_recommended" value="1" class="checkbox"><a href="#">только рекомендованные</a>
-                </li>
+                <li class="only"><a href="#">только рекомендованные</a></li>
               </ul>
             </div>
             <div class="order-list__line"></div>
-            <!--div.filters
-            //label(for='is_recommended') рекомендованные
-            	input(type="checkbox" id="is_recommended" value="1")
-            -->
+            <div class="filters">
+              <label for="is_recommended">рекомендованные
+                <input type="checkbox" id="is_recommended" value="1">
+              </label>
+            </div>
             <table id="my-ajax-table" class="order-list__table">
               <thead>
                 <tr class="order-list__table-title">
